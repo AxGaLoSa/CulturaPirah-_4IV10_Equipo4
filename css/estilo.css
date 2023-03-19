@@ -1,17 +1,25 @@
+/*Formato general de la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: boder-box;
 }
 
+/*Este apartado era para crear una animación de deslizamineto 
+en los vinculos internos(por si su html se divide en varios apartados )*/
+
 :root{
     scroll-behavior: smooth;
 
 }
 
+/*Tipo de letra*/
+
 body{
     font-family: 'Opens Sans', 'sans-serif';
 }
+
+/*Letras que se encuentran con la imagen color rosa*/
 
 .contenedor{
     width: 90%;
@@ -21,14 +29,19 @@ body{
     padding: 60px 0;
 }
 
+/*Estilo del header(imagen de color rosa)*/
+
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../imagenes/men.jpg);
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.5) 0%, rgb(251, 194, 235, 0.5) 100%), url(../img/img/men.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+/*letras blancas dentro del header*/
+
 
 .head{
     text-align: center;
@@ -42,6 +55,9 @@ header{
 
 }
 
+
+/*simbolo del menu*/
+
 .hamburguer{
     position: fixed;
     z-index: 10;
@@ -54,6 +70,10 @@ header{
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
+
+/*Estilo del menu donde estaran los link que nos guiaran
+a otro html*/
+
 
 .menu-navegacion{
     position: fixed;
@@ -71,24 +91,34 @@ header{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
+/*Efecto de anmimacion al dar click en el simbolo de menu*/
+
 .spread{
     transform: translate(0);
 }
+
+/*color de las letras de los vinculos en el menu*/
 
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
 }
 
-.titulo{
+/*Tamaño de las letras blancas grandes dentro del header*/
+
+ .titulo{
     font-size: 60px;
     margin-bottom: 15px;
 }
+
+/*Texto que deice aquello en la sociedad...*/
 
 .copy{
     font-weight: 300;
     font-size: 25px;
 }
+
+/*paar que los subtitulos que pongan se vean con color y tamaño*/
 
 .subtitulo{
     text-align: center;
@@ -98,12 +128,16 @@ header{
     font-size: 40px;
 }
 
+/*Para que eñ texto se posicione a lado del texto*/
+
 .contenedor-servicio{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* Si ponen una imagen a la do del texto esto hara q se acomode bien*/
 
 .contenedor-servicio img{
     width: 40%;
@@ -114,6 +148,7 @@ header{
     width: 45%;
 }
 
+
 .service{
     margin-bottom: 20px;
 }
@@ -122,6 +157,8 @@ header{
     margin-bottom: 7px;
     color: #9f8ad0;
 }
+
+/*Todo esto es para hacer la galeria aue esta en caracteristicas*/
 
 .gallery{
     background: #fff;
@@ -168,9 +205,12 @@ header{
     transition: transform .3s .2s;
 }
 
+
 .showImage{
     transform: scale(1) ;
 }
+
+/*Animación al cerrar las imganes(si hacen una galeria como en la de caracteristicas)*/
 
 .close{
     position: absolute;
@@ -180,6 +220,7 @@ header{
     cursor: pointer;
 }
 
+/*Todo este apartado es para q se vea mejor en el celular (Usenlo de acuerdo a la clases q usaron)*/
 @media screen and (max-width:800px) {
     .menu-navegacion{
         width: 50vw;
